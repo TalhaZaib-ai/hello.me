@@ -1,0 +1,79 @@
+/* src/MainLayout.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e6f0d4; /* Ensure the background color matches Picture 1 */
+}
+
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Adjust alignment */
+  padding: 20px;
+  height: 100vh;
+  gap: 40px;
+}
+
+.left-dialog,
+.right-dialog {
+  border: 2px dashed #9c27b0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #e0f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-dialog {
+  border: 2px solid #90caf9;
+  background-color: #fff;
+  position: relative;
+}
+
+.heading {
+  font-size: 18px;
+  color: #7c4dff;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+}
+
+.blue-heading {
+  color: #5b9bd5;
+}
+
+.status-heading {
+  margin-right: 5px;
+}
+
+.status-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.status-bar {
+  padding: 10px;
+  font-size: 16px;
+  color: #888;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dropdown-container {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
